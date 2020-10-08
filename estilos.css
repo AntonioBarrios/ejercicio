@@ -1,0 +1,138 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body {
+	background: #f0f0f0;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+}
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+header{
+    border-top: 20px solid #01ff93;
+}
+section {
+	background: #0a0a3b;
+	color: #fff;
+}
+ 
+section .formulario {
+	color: #212121;
+	text-align: center;
+}
+ 
+section .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+ 
+section .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+section .formulario textarea.error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+section .formulario .boton {
+	background: none;
+	border: 1px solid #01ff93;
+	color: #fff;
+	display: inline-block;
+    padding: 10px 15px;
+    margin: 20px auto 0;
+}
+ 
+section .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+ 
+aside{
+    background: #fff;
+}
+aside .lista {
+    list-style: none;
+}
+ 
+aside .lista li {
+    border-bottom: 1px solid #B6B6B6;
+    padding: 10px;
+    list-style-type:disc;
+}
+aside .lista li:last-child {
+    border-bottom: none;
+    padding: 10px;
+}
+aside .lista li a {
+	color: #B6B6B6;
+	display: block;
+    text-decoration: none;
+    padding: 5px 0;
+    
+}
+aside .lista li a:first-child {
+	color: #5c5c5c;
+	padding: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+aside .lista li a:hover {
+	text-decoration: line-through;
+}
+textarea{
+    width: 100%; 
+    max-width: 100%;
+    padding: 10px;
+    font-size: .8em;
+}
+
+@media (max-width: 767px) {
+    .contenedor{
+        width: 100%;
+        margin: 0px auto 0;
+        padding: 20px;
+    }
+    .header{
+        margin: 20px auto 0; 
+        width: 100%;
+    }
+    section {
+        padding: 10px;
+        width: 100;
+        float: none;
+    }
+    aside{
+        float: none;
+        padding: 10px;
+        width: 6100;
+        margin-left: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .contenedor{
+        width: 80%;
+        height: 90vh;
+        margin: 0px auto 0;
+        padding: 20px;
+    }
+    section {
+        padding: 50px 20px;
+        width: 33%;
+        float: left;
+    }
+    aside{
+        float: right;
+        padding: 0 0 0 40px;
+        width: 65%;
+        margin-left: 10px;
+    }
+}
